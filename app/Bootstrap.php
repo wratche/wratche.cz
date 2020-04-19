@@ -9,8 +9,6 @@ use Nette\Configurator;
 
 class Bootstrap
 {
-    private int $zero;
-
 	public static function boot(): Configurator
 	{
 		$configurator = new Configurator;

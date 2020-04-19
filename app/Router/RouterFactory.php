@@ -14,6 +14,7 @@ final class RouterFactory
 
 	public static function createRouter(): RouteList
 	{
+	    $array = [1,2,3];
 		$router = new RouteList;
 		$router->addRoute('<presenter>/<action>[/<id>]', 'Homepage:default');
 		return $router;
