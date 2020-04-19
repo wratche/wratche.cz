@@ -1,0 +1,15 @@
+# ecs.yaml
+services:
+  Symplify\CodingStandard\Sniffs\CleanCode\CognitiveComplexitySniff:
+  Symplify\CodingStandard\Sniffs\Architecture\DuplicatedClassShortNameSniff:
+  PhpCsFixer\Fixer\ArrayNotation\ArraySyntaxFixer:
+    syntax: short
+parameters:
+  paths:
+    - 'app'
+  sets:
+    - 'clean-code'
+    - 'psr12'
+    - 'dead-code'
+    - 'types'
+    - 'common'

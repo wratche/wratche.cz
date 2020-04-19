@@ -20,12 +20,24 @@
 		"nette/utils": "^3.0",
 		"latte/latte": "^2.5",
 		"tracy/tracy": "^2.6"
+
 	},
 	"require-dev": {
-		"nette/tester": "^2.0"
+		"nette/tester": "^2.0",
+		"symplify/easy-coding-standard": "^6.1",
+		"symplify/coding-standard": "^6.1",
+		"phpstan/phpstan-deprecation-rules": "^0.12.2",
+		"phpstan/extension-installer": "^1.0",
+		"phpstan/phpstan": "^0.12.18",
+		"phpstan/phpstan-strict-rules": "^0.12.2",
+		"phpstan/phpstan-nette": "^0.12.6"
 	},
 	"autoload": {
-		"classmap": ["app/Bootstrap.php"]
+		"classmap": ["app/Bootstrap.php"],
+		"psr-4": {"App\\": "app/"}
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "stable",
+	"scripts": {
+		"phpstan": "vendor/bin/phpstan analyse -l max app"
+	}
 }
