@@ -1,0 +1,20 @@
+ # IDE
+.idea
+
+# Nette
+/app/config/config.local.neon
+
+# Composer
+/vendor/*
+
+
+# NPM
+/node_modules
+
+# Files
+!.gitignore
+!.htaccess
+
+# Docker
+/.docker/data
+/docker-compose.override.yml
